@@ -21,10 +21,10 @@ try:
 except FileNotFoundError:
     rand_forest = None
 
-# Load Data
+
 df = pd.read_csv('data/diabetes.csv')
 
-# Sidebar
+
 st.sidebar.title("Navigation")
 
 if "page" not in st.session_state:
