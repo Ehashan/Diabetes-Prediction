@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 
-# Load Models
+
 try:
     with open('logistic_regression_model.pkl', 'rb') as f:
         log_reg = pickle.load(f)
@@ -51,7 +51,7 @@ with st.sidebar:
 
 page = st.session_state.page
 
-# App Title and Description
+
 st.title("Diabetes Prediction App")
 st.markdown("This app predicts whether a patient has diabetes based on several health metrics.")
 
